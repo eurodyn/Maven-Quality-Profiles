@@ -1,0 +1,48 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.eurodyn.qp</groupId>
+  <artifactId>ed-qp</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <name>Maven Quality Profiles</name>
+  <description>A set of quality profiles for PMD and Checkstyle.</description>
+  <url>https://github.com/eurodyn/Maven-Quality-Profiles</url>
+
+  <licenses>
+    <license>
+      <name>European Union Public Licence (EUPL v.1.1)</name>
+      <url>
+        https://joinup.ec.europa.eu/community/eupl/og_page/european-union-public-licence-eupl-v11
+      </url>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <name>European Dynamics</name>
+      <email>info@eurodyn.com</email>
+      <organization>European Dynamics</organization>
+      <organizationUrl>http://www.eurodyn.com</organizationUrl>
+    </developer>
+  </developers>
+  <scm>
+    <connection>scm:git:git@github.com:eurodyn/Maven-Quality-Profiles.git</connection>
+    <developerConnection>scm:git:git@github.com:eurodyn/Maven-Quality-Profiles.git
+    </developerConnection>
+    <url>https://github.com/eurodyn/Maven-Quality-Profiles</url>
+  </scm>
+  <distributionManagement>
+    <snapshotRepository>
+      <id>ossrh</id>
+      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+    </snapshotRepository>
+  </distributionManagement>
+
+  <modules>
+    <module>ed-qp-pmd</module>
+    <module>ed-qp-checkstyle</module>
+  </modules>
+
+</project>
