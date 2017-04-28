@@ -50,6 +50,7 @@ Java rules enabled except the ones documented in the ruleset file itself.
             </rulesets>
             <printFailingErrors>true</printFailingErrors>
             <linkXRef>false</linkXRef>
+            <sourceEncoding>UTF-8</sourceEncoding>
         </configuration>
         <executions>
             <execution>
