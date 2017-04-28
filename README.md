@@ -151,7 +151,7 @@ as part of your Maven build following the instructions below.
     <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>findbugs-maven-plugin</artifactId>
-        <version>3.0.4</version>
+        <version>${findbugs-maven-plugin.version}</version>
         <executions>
             <execution>
                 <id>findbugs</id>
