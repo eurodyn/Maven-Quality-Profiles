@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.eurodyn.qp</groupId>
   <artifactId>ed-qp</artifactId>
-  <version>1.1.0</version>
+  <version>1.1.1-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>Maven Quality Profiles</name>
@@ -30,7 +30,7 @@
     <developerConnection>scm:git:git@github.com:eurodyn/Maven-Quality-Profiles.git
     </developerConnection>
     <url>https://github.com/eurodyn/Maven-Quality-Profiles</url>
-    <tag>1.1.0</tag>
+    <tag>HEAD</tag>
   </scm>
   <distributionManagement>
     <snapshotRepository>
