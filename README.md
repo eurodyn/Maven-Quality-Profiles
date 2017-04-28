@@ -1,4 +1,3 @@
-# Quality Profiles
 This is a mini-project in which we try to package sensible
 defaults for source code quality control profiles. The aim of this project is not
 to define a global styleguide (although somehow indirectly it does), but
@@ -14,6 +13,7 @@ The tools we currently support are:
 * [PMD](https://pmd.github.io)
 * [Checkstyle](http://checkstyle.sourceforge.net)
 * [FindBugs](http://findbugs.sourceforge.net/)
+* [OWASP Maven Dependency Check](https://www.owasp.org/index.php/OWASP_Dependency_Check)
 
 __Opinion - everyone has one__:
 You might have noticed on the above paragraphs we mentioned
@@ -138,13 +138,12 @@ __Gotcha__: The above configuration will fail your build in case Checkstyle
  luxury of time to correct all mistakes at once, you can add on the
  `<configuration>` section `<failsOnError>false</failsOnError>`.
 
-## Extras
-### FindBugs
+## FindBugs
 [FindBugs](http://findbugs.sourceforge.net/) does not require a specially
 crafted configuration (at least, for now). You can simply integrate it
 as part of your Maven build following the instructions below.
 
-#### Projecti integration
+#### Project integration
 ```
 ...
 <plugins>
@@ -175,3 +174,38 @@ __Gotcha__: The above configuration will fail your build in case FindBugs
  to introduce checks on an existing project where you might not have the
  luxury of time to correct all mistakes at once, you can add on the
  `<configuration>` section `<failOnError>false</failOnError>`.
+
+## OWASP Maven Dependency Check
+For OWASP MDC we provide a customised suppression list to exclude known
+conflicts (such as the QLACK Fuse module).
+
+#### Project integration
+```
+...
+<plugins>
+    ...
+    <plugin>
+      <groupId>org.owasp</groupId>
+      <artifactId>dependency-check-maven</artifactId>
+      <version>${dependency-check-maven.version}</version>
+      <configuration>
+        <suppressionFile>owasp-suppression.xml</suppressionFile>
+      </configuration>
+      <executions>
+        <execution>
+          <goals>
+            <goal>check</goal>
+          </goals>
+        </execution>
+      </executions>
+      <dependencies>
+        <dependency>
+          <groupId>com.eurodyn.qp</groupId>
+          <artifactId>ed-qp-owasp</artifactId>
+          <version>${ed-qp.version}</version>
+        </dependency>
+      </dependencies>
+    </plugin>
+    ...
+</plugins>
+```
