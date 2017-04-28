@@ -27,8 +27,7 @@ of the project to let us know.
 
 The artifacts of this project are
 [published in Maven Central](http://search.maven.org/#search%7Cga%7C1%7Ccom.eurodyn.qp),
-so you can use it in your project as any other dependency:
-[Maven Central - Quality Profiles]().
+so you can use it in your project as any other dependency.
 
 ## PMD
 For PMD we provide a `ed-qp-pmd-ruleset.xml` ruleset that can be
