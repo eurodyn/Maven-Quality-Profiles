@@ -25,8 +25,9 @@ needs to be enforced (and can justify it), please use the
 [Issues Tracking](https://github.com/eurodyn/Maven-Quality-Profiles/issues)
 of the project to let us know.
 
-The artifacts of this project are published in Maven Central, so you can
-use it in your project as any other dependency:
+The artifacts of this project are
+[published in Maven Central](http://search.maven.org/#search%7Cga%7C1%7Ccom.eurodyn.qp),
+so you can use it in your project as any other dependency:
 [Maven Central - Quality Profiles]().
 
 ## PMD
