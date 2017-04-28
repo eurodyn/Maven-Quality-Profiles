@@ -43,7 +43,7 @@ Java rules enabled except the ones documented in the ruleset file itself.
     <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-pmd-plugin</artifactId>
-        <version>${pmd.version}</version>
+        <version>${maven-pmd-plugin.version}</version>
         <configuration>
             <rulesets>
                 <ruleset>ed-qp-pmd-ruleset.xml</ruleset>
