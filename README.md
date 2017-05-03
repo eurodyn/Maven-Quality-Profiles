@@ -208,3 +208,8 @@ conflicts (such as the QLACK Fuse module).
     ...
 </plugins>
 ```
+__Gotcha__: The above configuration will fail your build in case OWASP
+ errors exist, which is a good thing on a new project. However, if you want
+ to introduce checks on an existing project where you might not have the
+ luxury of time to correct all mistakes at once, you can add on the
+ `<configuration>` section `<failOnError>false</failOnError>`.
