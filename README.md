@@ -19,7 +19,7 @@ __Opinion - everyone has one__:
 You might have noticed on the above paragraphs we mentioned
 "_sensible defaults_". We understand perfectly that what one finds
 sensible may be totally insensible to someone else and, quite literally,
-there is no one-size-fits-all approach here. If you find a rule to
+there is no one-size-fits-all approach here. If you find a rule too
 restrictive (and can justify it), or if you find an ignored rule that
 needs to be enforced (and can justify it), please use the
 [Issues Tracking](https://github.com/eurodyn/Maven-Quality-Profiles/issues)
